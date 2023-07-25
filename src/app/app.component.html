@@ -1,4 +1,5 @@
 <div class="main cntainer">
+  <app-language-selector [languages]="languages"></app-language-selector>
   <button class="btn btn-danger"> <i class="pi pi-plus"></i> bootstrap and prime icons works</button>
   <div>
     <i class="bi bi-cart2" style="font-size: 30px;"> bootstrap icons works</i>
@@ -6,4 +7,5 @@
   <div class="language">
     <p>{{"test" | translate}}</p>
   </div>
+  <router-outlet></router-outlet>
 </div>

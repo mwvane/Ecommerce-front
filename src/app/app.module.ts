@@ -4,13 +4,22 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { AppComponent } from './app.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent,
+    LoginComponent,
+    LanguageSelectorComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -18,7 +27,8 @@ import { AppComponent } from './app.component';
         useFactory: httpTranslateloader,
         deps: [HttpClient]
       }
-    })
+    }),
+    AppRoutingModule
 
   ],
   providers: [],
