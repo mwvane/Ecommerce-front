@@ -1,3 +1,33 @@
 {
-    "test": "test"
+  "add": "add",
+  "remove": "remove",
+  "delete": "delete",
+  "edit": "edit",
+  "cancel": "cancel",
+  "save": "save",
+
+  "test": "test",
+  "menu": "menu",
+  "contact": "contact",
+  "address": "address",
+
+  "email": "email",
+  "firstname": "firstname",
+  "lastname": "lastname",
+  "password": "password",
+  "phone": "phone",
+  "ID": "ID",
+  "birth date": "birth date",
+  "login": "login",
+  "register": "register",
+  "authorization": "authorization",
+  "forget password": "forget password",
+  "confirm password": "confirm password",
+
+  "price": "price",
+  "name": "name",
+  "quantity": "quantity",
+  "add to cart": "add to cart",
+  "total price": "total price",
+  "": ""
 }
