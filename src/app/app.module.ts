@@ -4,23 +4,30 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './pages/auth/register/register.component';
-import { LoginComponent } from './pages/auth/login/login.component';
+import { RegisterComponent } from './shared/auth/register/register.component';
+import { LoginComponent } from './shared/auth/login/login.component';
 import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './shared/header/header.component';
+import { DialogModule } from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    LanguageSelectorComponent
+    LanguageSelectorComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -28,7 +35,9 @@ import { RouterModule } from '@angular/router';
         deps: [HttpClient]
       }
     }),
-    AppRoutingModule
+    AppRoutingModule,
+    DialogModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],
@@ -36,5 +45,5 @@ import { RouterModule } from '@angular/router';
 })
 export class AppModule { }
 export function httpTranslateloader(http: HttpClient) {
-  return new TranslateHttpLoader(http)  
+  return new TranslateHttpLoader(http)
 }

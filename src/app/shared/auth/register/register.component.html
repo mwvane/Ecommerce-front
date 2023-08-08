@@ -1,0 +1,183 @@
+<p-dialog
+  [(visible)]="modalService.registerModal"
+  (onHide)="onClose()"
+  [modal]="true"
+  [style]="{ width: '34vw' }"
+  styleClass="p-fluid"
+  [closable]="true"
+  [draggable]="false"
+  [resizable]="false"
+>
+  <div class="px-5">
+    <p class="text-caption weight-7 text-primary">
+      {{ "sign up" | translate }}
+    </p>
+    <form [formGroup]="registerForm" (submit)="onSubmit()">
+      <div class="flexY gaps-18 text-sm">
+        <div class="row">
+          <div class="col-6 flexY gaps-6">
+            <label class="weight-7 text-sm" for="firstname">{{
+              "firstname" | translate
+            }}</label>
+            <input
+              class="rounded-input"
+              type="text"
+              formControlName="firstname"
+              placeholder="{{ 'your firstname' | translate }}"
+            />
+            <div class="error text-sm">
+              <small
+                *ngIf="registerForm.get('firstname')!.errors?.['required']"
+                >{{ "required" | translate }}</small
+              >
+              <small
+                *ngIf="registerForm.get('firstname')!.errors?.['minlength']"
+                >{{
+                  "firstname must be greater then 2 symbols" | translate
+                }}</small
+              >
+              <small
+                *ngIf="registerForm.get('firstname')!.errors?.['noSpaceAllowed']"
+                >{{ "space not allowed" | translate }}</small
+              >
+            </div>
+          </div>
+
+          <div class="col-6 flexY gaps-6">
+            <label class="weight-7 text-sm" for="lastname">{{
+              "lastname" | translate
+            }}</label>
+            <input
+              class="rounded-input"
+              type="text"
+              formControlName="lastname"
+              placeholder="{{ 'your lastname' | translate }}"
+            />
+            <div class="error text-sm">
+              <small
+                *ngIf="registerForm.get('lastname')!.errors?.['required']"
+                >{{ "required" | translate }}</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flexY gaps-6">
+          <label class="weight-7 text-sm" for="username">{{
+            "email" | translate
+          }}</label>
+          <input
+            class="rounded-input"
+            type="email"
+            formControlName="email"
+            placeholder="Example@gmail.com"
+          />
+          <div class="error text-sm">
+            <small *ngIf="registerForm.get('email')!.errors?.['email']">{{
+              "required" | translate
+            }}</small>
+          </div>
+        </div>
+
+        <div class="flexY gaps-6">
+          <label class="weight-7 text-sm" for="phone">{{
+            "phone" | translate
+          }}</label>
+          <input
+            class="rounded-input"
+            type="text"
+            formControlName="phone"
+            placeholder="+995 xxx xxx xxx"
+          />
+          <div class="error text-sm">
+            <small></small>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 flexY gaps-6">
+            <label class="weight-7 text-sm" for="username">{{
+              "password" | translate
+            }}</label>
+            <input
+              class="rounded-input"
+              type="password"
+              formControlName="password"
+              placeholder="{{ 'your password' | translate }}"
+            />
+
+            <div class="error text-sm">
+              <small
+                *ngIf="registerForm.get('password')!.errors?.['capitalLetter']"
+                >{{ "password must contain capital letter" | translate }}</small
+              >
+              <small *ngIf="registerForm.get('password')!.errors?.['number']">{{
+                "password must contain number" | translate
+              }}</small>
+            </div>
+          </div>
+
+          <div class="col-6 flexY gaps-6">
+            <label class="weight-7 text-sm" for="username">{{
+              "confirm password" | translate
+            }}</label>
+            <input
+              class="rounded-input"
+              type="password"
+              formControlName="confirmPassword"
+              placeholder="{{ 'confirm password' | translate }}"
+            />
+            <div class="error text-sm">
+              <small
+                *ngIf="registerForm.get('confirmPassword')!.errors?.['confirmPassword']"
+                >{{ "password not match" | translate }}</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label weight-4" for="flexCheckDefault">
+              {{ "remember me" | translate }}
+            </label>
+          </div>
+          <span class="weight-4">{{ "forget password" | translate }}?</span>
+        </div>
+
+        <button
+          [disabled]="registerForm.invalid"
+          type="submit"
+          class="rounded-button w-100 weight-7 text-lg"
+        >
+          {{ "sign up" | translate }}
+        </button>
+      </div>
+    </form>
+    <div class="flexY gaps-25" style="margin-top: 25px">
+      <span class="text-center">OR</span>
+      <button class="btn-with-icon centerX gap-3 weight-5" type="submit">
+        <img src="assets/media/signin/google.png" alt="google" />{{
+          "Sign Up with Google" | translate
+        }}
+      </button>
+      <button class="btn-with-icon centerX gap-3 weight-5" type="submit">
+        <img src="assets/media/signin/facebook.png" alt="facebook" />{{
+          "Sign Up with Facebook" | translate
+        }}
+      </button>
+      <div class="text-center">
+        <span>{{ "Already have an account?" }}</span>
+        <a class="custom-link mx-2" (click)="onLogin()">{{
+          "sign in" | translate
+        }}</a>
+      </div>
+    </div>
+  </div>
+</p-dialog>

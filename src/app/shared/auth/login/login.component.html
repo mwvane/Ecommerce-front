@@ -1,0 +1,79 @@
+<p-dialog
+  [(visible)]="modalService.loginModal"
+  (onHide)="onClose()"
+  [modal]="true"
+  styleClass="p-fluid dialog"
+  [draggable]="false"
+  [resizable]="false"
+>
+  <div class="px-5">
+    <p class="text-caption weight-7 text-primary">
+      {{ "sign in" | translate }}
+    </p>
+    <form [formGroup]="loginForm" (submit)="onSubmit()">
+      <div class="inputs-container text-sm">
+        <div class="flexY gaps-6">
+          <label class="weight-7 text-sm" for="username">{{
+            "email" | translate
+          }}</label>
+          <input
+            class="rounded-input"
+            type="text"
+            formControlName="email"
+            placeholder="Example@gmail.com"
+          />
+        </div>
+        <div class="flexY gaps-6">
+          <label class="weight-7 text-sm" for="username">{{
+            "password" | translate
+          }}</label>
+          <input
+            class="rounded-input"
+            type="password"
+            formControlName="password"
+            placeholder="{{ 'your password' | translate }}"
+          />
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              formControlName="rememberMe"
+            />
+            <label class="form-check-label weight-4" for="flexCheckDefault">
+              {{ "remember me" | translate }}
+            </label>
+          </div>
+          <span class="weight-4">{{ "forget password" | translate }}?</span>
+        </div>
+        <button class="rounded-button w-100 weight-7 text-lg" type="submit">
+          {{ "sign in" | translate }}
+        </button>
+      </div>
+      <!-- <a (click)="onRegister()">{{"register"| translate}}</a> -->
+    </form>
+    <div class="flexY gaps-25" style="margin-top: 25px">
+      <span class="text-center">OR</span>
+      <button class="btn-with-icon centerX gap-3 weight-5" (click)="onGoogle()">
+        <img src="assets/media/signin/google.png" alt="google" />{{
+          "Sign Up with Google" | translate
+        }}
+      </button>
+      <button
+        class="btn-with-icon centerX gap-3 weight-5"
+        (click)="onFacebook()"
+      >
+        <img src="assets/media/signin/facebook.png" alt="facebook" />{{
+          "Sign Up with Facebook" | translate
+        }}
+      </button>
+      <div class="text-center">
+        <span>{{ "don't have an acount" | translate }}?</span>
+        <a class="custom-link mx-2" (click)="onRegister()">{{
+          "sign up" | translate
+        }}</a>
+      </div>
+    </div>
+  </div>
+</p-dialog>

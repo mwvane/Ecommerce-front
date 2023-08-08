@@ -1,4 +1,6 @@
 :root{
-    --primary-colr: black;
-    --secondary-color: white;
+    --primaryColor: #C1C3FF;
+    --secondaryColor: white;
+    --borderColor: #DEDEDE;
+    --disabled: #d4d5dd;
 }

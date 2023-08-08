@@ -1,6 +1,209 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
-body{
+@import "variables.css";
+
+::-webkit-scrollbar {
+    background-color: #C1C3FF;
+    width: 4px;
+    border-radius: 6px;
+
+}
+
+html::-webkit-scrollbar {
+    background-color: #C1C3FF;
+    width: 2px;
+    border-radius: 6px;
+
+}
+
+body::-webkit-scrollbar {
+    background-color: #C1C3FF;
+    width: 2px;
+    border-radius: 6px;
+
+}
+
+::ng-deep ::-webkit-scrollbar {
+    background-color: #C1C3FF;
+    width: 2px;
+    border-radius: 6px;
+}
+
+::ng-deep ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: red;
+}
+
+body {
     margin: 0;
     padding: 0;
+    font-family: Helvetica;
+}
+
+/* BACKGROUNDS */
+.bg-Primary {
+    background-color: #C1C3FF;
+}
+
+
+/* TEXT STYLES*/
+.error {
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-xsm {
+    font-size: .7rem;
+}
+
+.text-sm {
+    font-size: .8rem;
+}
+
+.text-md {
+    font-size: .9rem;
+}
+
+.text-lg {
+    font-size: 1rem;
+}
+
+.text-xlg {
+    font-size: 1.1rem;
+}
+
+.text-caption {
+    font-size: 28px;
+}
+
+.weight-1 {
+    font-weight: 100;
+}
+
+.weight-2 {
+    font-weight: 200;
+}
+
+.weight-3 {
+    font-weight: 300;
+}
+
+.weight-4 {
+    font-weight: 400;
+}
+
+.weight-5 {
+    font-weight: 500;
+}
+
+.weight-6 {
+    font-weight: 600;
+}
+
+.weight-7 {
+    font-weight: 700;
+}
+
+.bg-primary {
+    background-color: var(--primaryColor) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondaryColor) !important;
+}
+
+.text-primary {
+    color: var(--primaryColor) !important;
+}
+
+.text-secondary {
+    color: var(--primaryColor) !important;
+}
+
+
+/* display */
+.flexY {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerX {
+    display: flex;
+    justify-content: center;
+}
+
+.centerY {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GAP */
+.gaps-4 {
+    gap: 4px;
+}
+
+.gaps-8 {
+    gap: 8px;
+}
+
+.gaps-6 {
+    gap: 6px;
+}
+
+.gaps-18 {
+    gap: 18px;
+}
+
+.gaps-25 {
+    gap: 25px;
+}
+
+/* INPUTS */
+.rounded-input {
+    padding: .6rem 10px;
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    font-size: .9rem;
+    outline: none;
+}
+
+.rounded-input:focus {
+    border: 1px solid var(--primaryColor);
+}
+
+/* BUTTONS */
+.rounded-button {
+    border-radius: 10px;
+    padding: .6rem 10px;
+    border: none;
+    color: var(--secondaryColor);
+    background: var(--primaryColor);
+    outline: none;
+}
+
+.rounded-button:disabled {
+    background-color: var(--disabled);
+}
+
+.btn-with-icon {
+    padding: .6rem 10px;
+    border-radius: 10px;
+    border: 1px solid var(--primaryColor);
+    font-size: .9rem;
+    outline: none;
+    background-color: var(--secondaryColor);
+}
+
+/* LINK */
+
+.custom-link {
+    text-decoration: none;
+    cursor: pointer;
 }

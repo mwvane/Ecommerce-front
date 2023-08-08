@@ -1,0 +1,22 @@
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+:host ::ng-deep .p-dialog .p-dialog-header {
+    padding-bottom: 0 !important;
+}
+
+::ng-deep .p-dialog{
+    width: 500px !important;
+    max-height: 90% !important;
+}
+
+@media  screen and (max-width: 650px) {
+    ::ng-deep .p-dialog{
+        width: 100% !important;
+        max-height: 100% !important;
+        height: 100vh !important;
+    }
+}
