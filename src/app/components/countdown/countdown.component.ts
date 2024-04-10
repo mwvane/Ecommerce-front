@@ -9,7 +9,7 @@ import * as moment from 'moment';
 export class CountdownComponent implements OnInit {
   @Input() title: string = '';
   @Output() finish = new EventEmitter();
-  @Input() expireDate: any = moment('2024/03/21');
+  @Input() expireDate: any = moment('2024/04/03');
   currentDate: any = moment();
   duration: any;
   timer: any;
@@ -21,20 +21,28 @@ export class CountdownComponent implements OnInit {
   }
   start() {
     this.timer = setInterval(() => {
-      this.currentDate = moment()
+      this.currentDate = moment();
       this.duration = moment.duration(this.expireDate.diff(this.currentDate));
       this.date = this.duration._data;
-      if(this.isFinished()){
-        this.finish.emit()
-        clearInterval(this.timer)
+      if (this.isFinished()) {
+        this.date.days = 0;
+        this.date.hours = 0;
+        this.date.minutes = 0;
+        this.date.seconds = 0;
+        this.finish.emit();
+        clearInterval(this.timer);
       }
-      
     }, 1000);
   }
-  isFinished(){
-    if(this.date.days > 0 || this.date.hours > 0 || this.date.minutes > 0 || this.date.seconds > 0){
-      return false
+  isFinished() {
+    if (
+      this.date.days > 0 ||
+      this.date.hours > 0 ||
+      this.date.minutes > 0 ||
+      this.date.seconds > 0
+    ) {
+      return false;
     }
-    return true
+    return true;
   }
 }

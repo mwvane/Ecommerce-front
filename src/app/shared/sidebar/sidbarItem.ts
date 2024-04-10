@@ -1,7 +1,7 @@
 export interface ISidebarItem {
     id?: number
     name: string
-    image?: string
+    imageUrl?: string
     items: {id:number, name: string, count: number}[] 
     opened?: boolean   
 }

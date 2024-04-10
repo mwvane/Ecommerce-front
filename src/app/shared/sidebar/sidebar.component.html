@@ -11,7 +11,8 @@
       </div>
 
       <ul class="sidebar-menu-category-list">
-        <app-slider-item *ngFor="let item of sidebarItems" [data]="item" (expand)="expand($event, item)"></app-slider-item>
+        <app-spinner *ngIf="!data"></app-spinner>
+        <app-slider-item *ngFor="let item of data" [data]="item" (expand)="expand($event, item)"></app-slider-item>
       </ul>
 
     </div>

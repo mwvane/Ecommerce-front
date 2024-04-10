@@ -27,7 +27,8 @@ import { SliderItemComponent } from './shared/sidebar/slider-item/slider-item.co
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { ProductComponent } from './product/product.component';
 import { SectionComponent } from './components/section/section.component';
-import { ShowcaseComponent } from './components/showcase/showcase.component'
+import { ShowcaseComponent } from './components/showcase/showcase.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { ShowcaseComponent } from './components/showcase/showcase.component'
     ProductComponent,
     SectionComponent,
     ShowcaseComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,

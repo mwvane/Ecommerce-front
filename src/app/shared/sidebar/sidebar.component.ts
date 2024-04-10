@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, booleanAttribute } from '@angular/core';
 import { Action } from 'rxjs/internal/scheduler/Action';
 import { ISidebarItem } from './sidbarItem';
 import { StaticFiles } from 'src/app/staticFIles';
@@ -9,9 +9,10 @@ import { StaticFiles } from 'src/app/staticFIles';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  sidebarItems: ISidebarItem[] = StaticFiles.sidebarItems
+  @Input() data: any
+  loading: boolean = true
   expand(opened: boolean, item: ISidebarItem){
-    for(let i of this.sidebarItems){
+    for(let i of this.data){
       if(item != i){
         i.opened = false
       }

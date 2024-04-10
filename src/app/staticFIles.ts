@@ -203,43 +203,43 @@ export class StaticFiles {
     },
   ];
 
-  static sidebarItems: ISidebarItem[] = [
-    {id: 1, name: "clothes", image:"./assets/images/icons/dress.svg", items: [
-      {id:2, name: "jacket", count: 100},
-      {id:3, name: "short & jeans", count: 150},
-      {id:4, name: "dress & frock", count: 300},
-    ]},
-    {id: 5, name: "footwear", image:"./assets/images/icons/shoes.svg", items: [
-      {id:6, name: "sports", count: 45},
-      {id:7, name: "formal", count: 63},
-      {id:8, name: "casual", count: 23},
-      {id:9, name: "safety shoes", count: 8},
-    ]},
-    {id: 10, name: "Jewelry", image:"./assets/images/icons/jewelry.svg", items: [
-      {id:11, name: "Earrings", count: 45},
-      {id:12, name: "Couple Rings", count: 63},
-      {id:13, name: "Necklace", count: 23},
-    ]},
-    {id: 14, name: "Perfume", image:"./assets/images/icons/perfume.svg", items: [
-      {id:15, name: "Clothes Perfume", count: 45},
-      {id:16, name: "Deodorant", count: 63},
-    ]},
-    {id: 17, name: "Cosmetics", image:"./assets/images/icons/cosmetics.svg", items: [
-      {id:18, name: "Shampoo", count: 45},
-      {id:19, name: "Sunscreen", count: 63},
-      {id:20, name: "Body Wash", count: 63},
-      {id:21, name: "makeup kit", count: 63},
-    ]},
-    {id: 22, name: "glasses", image:"./assets/images/icons/shoes.svg", items: [
-      {id:23, name: "Sunglasses", count: 45},
-      {id:24, name: "Lenses", count: 63},
-    ]},
-    {id: 25, name: "bags", image:"./assets/images/icons/glasses.svg", items: [
-      {id:26, name: "Shopping Bag", count: 45},
-      {id:27, name: "Gym Backpack", count: 63},
-      {id:28, name: "pusre", count: 63},
-      {id:29, name: "wallet", count: 63},
-    ]}
+  // static sidebarItems: ISidebarItem[] = [
+  //   {id: 1, name: "clothes", image:"./assets/images/icons/dress.svg", items: [
+  //     {id:2, name: "jacket", count: 100},
+  //     {id:3, name: "short & jeans", count: 150},
+  //     {id:4, name: "dress & frock", count: 300},
+  //   ]},
+  //   {id: 5, name: "footwear", image:"./assets/images/icons/shoes.svg", items: [
+  //     {id:6, name: "sports", count: 45},
+  //     {id:7, name: "formal", count: 63},
+  //     {id:8, name: "casual", count: 23},
+  //     {id:9, name: "safety shoes", count: 8},
+  //   ]},
+  //   {id: 10, name: "Jewelry", image:"./assets/images/icons/jewelry.svg", items: [
+  //     {id:11, name: "Earrings", count: 45},
+  //     {id:12, name: "Couple Rings", count: 63},
+  //     {id:13, name: "Necklace", count: 23},
+  //   ]},
+  //   {id: 14, name: "Perfume", image:"./assets/images/icons/perfume.svg", items: [
+  //     {id:15, name: "Clothes Perfume", count: 45},
+  //     {id:16, name: "Deodorant", count: 63},
+  //   ]},
+  //   {id: 17, name: "Cosmetics", image:"./assets/images/icons/cosmetics.svg", items: [
+  //     {id:18, name: "Shampoo", count: 45},
+  //     {id:19, name: "Sunscreen", count: 63},
+  //     {id:20, name: "Body Wash", count: 63},
+  //     {id:21, name: "makeup kit", count: 63},
+  //   ]},
+  //   {id: 22, name: "glasses", image:"./assets/images/icons/shoes.svg", items: [
+  //     {id:23, name: "Sunglasses", count: 45},
+  //     {id:24, name: "Lenses", count: 63},
+  //   ]},
+  //   {id: 25, name: "bags", image:"./assets/images/icons/glasses.svg", items: [
+  //     {id:26, name: "Shopping Bag", count: 45},
+  //     {id:27, name: "Gym Backpack", count: 63},
+  //     {id:28, name: "pusre", count: 63},
+  //     {id:29, name: "wallet", count: 63},
+  //   ]}
 
-  ]
+  // ]
 }
