@@ -1,0 +1,34 @@
+<div class="countdown-box">
+
+    <p class="countdown-desc">
+      {{title}}
+    </p>
+
+    <div class="countdown">
+
+      <div class="countdown-content">
+
+        <p class="display-number">{{date.days.toString().padStart(2,'0')}}</p>
+
+        <p class="display-text">{{'days' | translate}}</p>
+
+      </div>
+
+      <div class="countdown-content">
+        <p class="display-number">{{date.hours.toString().padStart(2,'0')}}</p>
+        <p class="display-text">{{'hr' | translate}}</p>
+      </div>
+
+      <div class="countdown-content">
+        <p class="display-number">{{date.minutes.toString().padStart(2,'0')}}</p>
+        <p class="display-text">{{'min' | translate}}</p>
+      </div>
+
+      <div class="countdown-content">
+        <p class="display-number">{{date.seconds.toString().padStart(2,'0')}}</p>
+        <p class="display-text">{{'sec' | translate}}</p>
+      </div>
+
+    </div>
+
+  </div>

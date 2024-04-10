@@ -1,0 +1,35 @@
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px
+}
+.social-container i {
+    color: rgb(100,100,100);
+}
+.social-icon:hover {
+    background: var(--salmonPink);
+    color: white;
+    cursor: pointer;
+}
+
+.main-container {
+    box-sizing: border-box;
+}
+.social-icon {
+    width: 27px;
+    height: 27px;
+    background: var(--transpharentGray);
+    border-radius: 6px;
+    text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+    .social-container {
+        display: none;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .language-selector {
+        display: none;
+    }
+}

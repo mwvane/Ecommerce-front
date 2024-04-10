@@ -3,4 +3,14 @@
     --secondaryColor: white;
     --borderColor: #DEDEDE;
     --disabled: #d4d5dd;
+    --spanishGray: hsl(0,0%,60%);
+    --sonicSilver: hsl(0,0%,47%);
+    --eerieBlack: hsl(0,0%,13%);
+    --salmonPink: hsl(353,100%,78%);
+    --sandyBrown: hsl(29,90%,65%);
+    --bittersweet: hsl(0,100%,70%);
+    --oceanGreen: hsl(152,51%,52%);
+    --cultured: hsl(0,0%,93%);
+    --onyx: hsl(0,0%,27%);
+    --transpharentGray: rgba(120,120,120, .2);
 }

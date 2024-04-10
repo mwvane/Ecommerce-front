@@ -43,5 +43,16 @@
   "ID must be 11 digits": "ID must be 11 digits",
   "password not match": "Password not match",
   "password must contain capital letter": "Password must contain capital letter",
-  "password must contain number": "Password must contain number"
+  "password must contain number": "Password must contain number",
+  "free shipping this week order over": "FREE SHIPING THIS WEEK ORDER OVER",
+
+  "hours": "Hours",
+  "minutes" : "Minutes",
+  "days" : "Days",
+  "seconds" : "Seconds",
+  "year" : "Year",
+  "sec" : "Sec",
+  "min" : "Min",
+  "hr" : "Hours"
+  
 }

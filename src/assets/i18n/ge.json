@@ -45,5 +45,15 @@
   "ID must be 11 digits": "ID უნდა იყოს 11 ციფრი",
   "password not match": "პაროლი არ ემთხვევა",
   "password must contain capital letter": "პაროლი უნდა შეიცავდეს დიდ ასოს",
-  "password must contain number": "პაროლი უნდა შეიცავდეს ციფრს"
+  "password must contain number": "პაროლი უნდა შეიცავდეს ციფრს",
+  "free shipping this week order over": "უფასო მიწოდებისთვის შეუკვეთე",
+
+  "hours": "საათი",
+  "minutes" : "წუთი",
+  "days" : "დღე",
+  "seconds" : "წამი",
+  "year" : "წელი",
+  "sec" : "წმ",
+  "min" : "წთ",
+  "hr" : "სთ"
 }

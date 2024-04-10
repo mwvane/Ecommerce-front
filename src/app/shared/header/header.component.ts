@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalService } from 'src/app/services/modal.service';
+import { StaticFiles } from 'src/app/staticFIles';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,7 @@ import { ModalService } from 'src/app/services/modal.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  menuItems = StaticFiles.userMenu
 
   constructor(private modalService: ModalService) { }
 

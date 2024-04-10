@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "desktop-navigation-menu"
+    "banner"
+    "category-slider";
+
+  /* "nav nav nav nav"
+    "sidebar main main ads" */
+  /* "footer footer footer footer" */
+  grid-template-rows: auto;
+  position: relative;
+}
+.banner {
+  grid-area: banner;
+}
+.product-container .container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .desktop-navigation-menu {
+    display: none;
+  }
+}

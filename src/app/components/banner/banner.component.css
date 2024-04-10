@@ -1,0 +1,27 @@
+.banner-container {
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 4rem;
+    gap:16px;
+    font-weight: bold;
+}
+.category-name {
+    color: var(--salmonPink);
+    font-size: 1.5rem;
+}
+.banner-title {
+    text-transform: uppercase;
+    color: black;
+}
+.additional-info {
+    color: var(--sonicSilver);
+    font-size: 1.3rem;
+}

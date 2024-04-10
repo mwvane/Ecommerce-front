@@ -1,12 +1,20 @@
-<div class="main cntainer">
-  <app-header></app-header>
-  <div>
-    <i class="bi bi-cart2" style="font-size: 30px;"> bootstrap icons works</i>
+<div class="main-container">
+  <div class="header">
+    <app-header-top
+      [showSocial]="true"
+      [social]="social"
+      [headerText]="headerTopText"
+    ></app-header-top>
+    <app-header></app-header>
   </div>
-  <div class="language">
-    <p>{{"test" | translate}}</p>
-  </div>
+  <!-- <div class="item header">header</div>
+    <div class="item sidebar">sidebar</div>
+    <div class="item nav">navbar</div>
+    <div class="item main"></div>
+    <div class="item ads">ads</div>
+    <div class="item footer">footer</div> -->
   <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </div>
 
 <!-- modals -->

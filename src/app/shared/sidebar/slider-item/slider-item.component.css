@@ -1,0 +1,8 @@
+.sub-titile {
+    color: var(--spanish-gray);
+    cursor: pointer;
+}
+.sub-titile:hover {
+    color: var(--eerie-black)
+
+}

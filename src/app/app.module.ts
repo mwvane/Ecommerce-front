@@ -12,7 +12,22 @@ import { HeaderComponent } from './shared/header/header.component';
 import { DialogModule } from 'primeng/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { HeaderTopComponent } from './shared/header-top/header-top.component';
+import { SearchComponent } from './components/search/search.component';
+import {MenuModule} from 'primeng/menu';
+import { BannerComponent } from './components/banner/banner.component';
+import { CategorySliderComponent } from './components/category/category-slider/category-slider.component';
+import { CategorySliderItemComponent } from './components/category/category-slider-item/category-slider-item.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { DescktopNavigationMenuComponent } from './components/descktop_navigation_menu/desktop-navigation-menu/descktop-navigation-menu.component';
+import { DescktopNavigationMenuItemComponent } from './components/descktop_navigation_menu/desktop-navigation-menu-item/desktop-navigation-menu-item.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { SliderItemComponent } from './shared/sidebar/slider-item/slider-item.component';
+import { CountdownComponent } from './components/countdown/countdown.component';
+import { ProductComponent } from './product/product.component';
+import { SectionComponent } from './components/section/section.component';
+import { ShowcaseComponent } from './components/showcase/showcase.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +36,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     LanguageSelectorComponent,
     HeaderComponent,
+    HeaderTopComponent,
+    SearchComponent,
+    BannerComponent,
+    CategorySliderComponent,
+    CategorySliderItemComponent,
+    HomeComponent,
+    FooterComponent,
+    DescktopNavigationMenuComponent,
+    DescktopNavigationMenuItemComponent,
+    SidebarComponent,
+    SliderItemComponent,
+    CountdownComponent,
+    ProductComponent,
+    SectionComponent,
+    ShowcaseComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,8 +67,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     }),
     AppRoutingModule,
     DialogModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

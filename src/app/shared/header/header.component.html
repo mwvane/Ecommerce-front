@@ -1,9 +1,13 @@
-<div class="main-container w-100 py-3">
+<div class="main-container w-100 py-5 space-between">
     <div class="container">
-        <span>logo heare</span>
-        <div class="d-flex">
-            <a class="custom-link mx-3" (click)="onLogin()">{{"login"| translate}}</a>
-            <app-language-selector></app-language-selector>
+        <span class="text-center">logo heare</span>
+        <div class="searchbar">
+            <app-search [placeholder]="'enter your product name'+'...'"></app-search>
+        </div>
+        <div class="user">
+            <i class="bi bi-person menu-icon" (click)="onLogin()"></i>
+            <i class="bi bi-heart menu-icon"></i>
+            <i class="bi bi-cart3 menu-icon"></i>
         </div>
     </div>
 </div>

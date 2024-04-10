@@ -1,0 +1,27 @@
+
+.item {
+    border: 1px solid green;
+    padding: 8px;
+    border-radius: 8px;
+}
+/* .ads{
+    grid-area: ads;
+}
+.footer {
+    grid-area: footer;
+}
+.nav {
+    grid-area: nav;
+}
+.main {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sidebar;
+} */
+
+@media only screen and (max-width: 720px){
+    .sidebar {
+        display: block
+    }
+}

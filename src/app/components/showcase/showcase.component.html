@@ -1,0 +1,23 @@
+<div class="showcase">
+                  
+    <a href="#" class="showcase-img-box">
+      <img src="{{data.images![0]}}" alt="pure garment dyed cotton shirt" class="showcase-img"
+        width="70">
+    </a>
+  
+    <div class="showcase-content">
+  
+      <a href="#">
+        <h4 class="showcase-title">{{data.name}}</h4>
+      </a>
+  
+      <a href="#" class="showcase-category">{{data.category.name}}</a>
+  
+      <div class="price-box">
+        <p class="price">{{data.discount ?  data.price - (data.price * data.discount!.percent / 100) : data.price}}</p>
+        <del *ngIf="data.discount">{{data.price}}</del>
+      </div>
+  
+    </div>
+  
+  </div>

@@ -1,0 +1,15 @@
+<div class="main-container py-3">
+    <div class="container space-between">
+        <div class="social-container" *ngIf="showSocial">
+            <div class="social-icon center" *ngFor="let item of social">
+                <a href="{{item.url}}" target="_blank"><i class="{{item.icon}}" style="font-size: 1rem">{{item.text}}</i></a>
+            </div>
+        </div>
+        <div class="title">
+            <span>{{headerText | translate}}</span>
+        </div>
+        <div class="language-selector">
+            <app-language-selector></app-language-selector>
+        </div>
+    </div>
+</div>

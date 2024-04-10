@@ -1,0 +1,32 @@
+<div class="sidebar-menu-category" (click)="onExpand()">
+  <div>
+    <button class="sidebar-accordion-menu" data-accordion-btn>
+      <div class="menu-title-flex">
+        <img
+          src="{{data.image}}"
+          width="20"
+          height="20"
+          class="menu-title-img"
+        />
+
+        <span class="menu-title">{{ data.name }}</span>
+      </div>
+
+      <div>
+        <i [ngClass]="data.opened ? 'bi bi-dash' : 'bi bi-plus'" style="font-weight: 600;"></i>
+      </div>
+    </button>
+
+    <ul
+      [ngClass]="data.opened ? 'active' : ''"
+      class="sidebar-submenu-category-list"
+    >
+      <li class="space-between text-sm sub-titile" *ngFor="let subitem of data.items">
+        <span class="product-name">{{ subitem.name }}</span>
+        <data value="300" class="stock" title="Available Stock">{{
+          subitem.count
+        }}</data>
+      </li>
+    </ul>
+  </div>
+</div>

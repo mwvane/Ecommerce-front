@@ -1,4 +1,5 @@
 import { ICategory } from "./category"
+import { IDiscount } from "./discount"
 
 export interface IProduct{
     id?: number
@@ -8,6 +9,7 @@ export interface IProduct{
     category: ICategory
     images?: string[]
     description?: string
-    rating: number
+    rating?: number
     createDate: Date
+    discount?: IDiscount
 }

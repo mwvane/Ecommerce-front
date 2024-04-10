@@ -1,4 +1,45 @@
+.main-container {
+    box-sizing: border-box;
+    padding: 33px 0;
+    border-top: 1px solid var(--cultured);
+    border-bottom: 1px solid var(--cultured);
+}
 .container{
     display: flex;
     justify-content: space-between;
 }
+.searchbar {
+    width: 500px;
+}
+.menu-icon {
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+.menu-icon:hover {
+    color: var(--salmonPink);
+}
+.user {
+    display: flex;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .user {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .searchbar {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .searchbar {
+        width: 100%;
+    }
+}
+

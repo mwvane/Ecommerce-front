@@ -1,0 +1,12 @@
+<div class="category-item">
+    <div class="category-img-box">
+        <img src="{{data.image}}" alt="{{data.name}}" width="30">
+    </div>
+    <div class="category-content-box">
+        <div class="category-content-flex">
+           <h3 class="category-item-title">{{data.name ? data.name : "NAN"}}</h3> 
+           <p class="category-item-amount">{{'(' + data.productCount + ')'}}</p>
+        </div>
+        <a ng shref="#" class="custom-link" style="text-transform: capitalize;">Show all</a>
+    </div>
+</div>
